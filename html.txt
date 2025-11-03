@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rock Paper Scissors (CSS Only)</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="game">
+      <h1>Rock Paper Scissors</h1>
+      <p class="desc">
+        Select one for <strong>Player</strong> and one for
+        <strong>Computer</strong> to see who wins!
+      </p>
+
+      <!-- PLAYER -->
+      <input type="radio" id="p-rock" name="player" />
+      <input type="radio" id="p-paper" name="player" />
+      <input type="radio" id="p-scissor" name="player" />
+
+      <!-- COMPUTER -->
+      <input type="radio" id="c-rock" name="computer" />
+      <input type="radio" id="c-paper" name="computer" />
+      <input type="radio" id="c-scissor" name="computer" />
+
+      <section>
+        <h2>Player</h2>
+        <div class="choices">
+          <label for="p-rock">👊</label>
+          <label for="p-paper">✋</label>
+          <label for="p-scissor">✌</label>
+        </div>
+      </section>
+
+      <section>
+        <h2>Computer</h2>
+        <div class="choices">
+          <label for="c-rock">👊</label>
+          <label for="c-paper">✋</label>
+          <label for="c-scissor">✌</label>
+        </div>
+      </section>
+
+      <div class="result">
+        <div class="match"></div>
+        <div class="outcome"></div>
+      </div>
+
+    </main>
+  </body>
+</html>
